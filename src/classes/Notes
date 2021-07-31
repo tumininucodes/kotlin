@@ -1,0 +1,38 @@
+Instances of classes are references
+
+When you define a constant, the value of the constant cannot be changed. It is
+important to remember that, with reference types, the value is a reference
+
+Remember that instances of classes are mutable objects.
+
+Just as the == operator checks if two values are equal, the === identity operator
+compares the memory address of two references. It tells you whether the value of the
+references are the same; that is, they point to the same block of data on the heap.
+That means this === operator can tell the difference between the John you’re looking
+for and an imposter-John
+
+When you create a reference type such as a class, the system stores the actual
+instance in a region of memory known as the heap. References to the class instances
+are stored in a region of memory called the stack, unless the reference is part of a
+class instance, in which case the reference is stored on the heap with the rest of the
+class instance.
+Both the heap and the stack have essential roles in the execution of any program:
+• The system uses the stack to store anything on the immediate thread of
+execution; it is tightly managed and optimized by the CPU. When a function
+creates a variable, the stack stores that variable and then destroys it when the
+function exits. Since the stack is so well organized, it’s very efficient, and thus
+quite fast.
+• The system uses the heap to store instances of reference types. The heap is
+generally a large pool of memory from which the system can request and
+dynamically allocate blocks of memory. Lifetime is flexible and dynamic. The heap
+doesn’t automatically destroy its data like the stack does; additional work is
+required to do that. This makes creating and removing data on the heap a slower
+process, compared to on the stack.
+When you create an instance of a class, your code requests a block of memory on the
+heap to store the instance itself. It stores the address of that memory in your named
+variable on the stack.
+This has only been a brief introduction to the dynamics of heaps and stacks, but you
+know enough at this point to understand the reference semantics you’ll use to work
+with classes
+
+Destructuring declarations come in handy
