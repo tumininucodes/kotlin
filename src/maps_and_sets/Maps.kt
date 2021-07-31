@@ -12,8 +12,22 @@ fun main() {
     // Adding pairs to maps
     val bobData = mutableMapOf("name" to "Bob", "profession" to "CardPlayer", "country" to "USA")
     bobData.put("state", "CA")
+    println(bobData)
     // there are other ways this can be done though
 
+    // Iterating through maps
+    for ((player, score) in namesAndScores) {
+        println("$player - $score")
+    }
+
+    // Hash values
+    println("Yooo".hashCode())
+    println(1.hashCode())
+    println(1.hashCode())
+    println(false.hashCode())
+    println(false.hashCode())
+
+    // A given value would always have a particular hash value no matter how many times, it is enquired
 
     // Updating values
     bobData.put("name", "Bobby")
