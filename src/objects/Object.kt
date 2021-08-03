@@ -44,3 +44,17 @@ object StudentRepository {
         }
     }
 }
+
+// Namespace for constants use case
+
+object JsonKeys {
+    const val JSON_KEY_ID = "id"
+    const val JSON_KEY_FIRSTNAME = "first_name"
+    const val JSON_KEY_LASTNAME = "last_name"
+}
+
+// Companion object use case
+
+class Scientist private constructor() {
+
+}

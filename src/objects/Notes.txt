@@ -3,3 +3,13 @@ The object keyword in Kotlin lets you define a type that only has a single insta
 A type defined with object cannot have constructors: Since there is only one instance of an object, there is no reason
 to provide constructor functions to create other instances. In a sense, the type is the instance.
 
+Another example use case is to use object to provide a namespace for constants and methods that need to be referenced
+from multiple places in your app. . By putting constants into an object, you reduce the likelihood of name collisions
+when your constants are given commonly used names
+
+While constructors are not allowed for objects, they do have many similarities with classes:
+• Objects can have properties and member functions.
+• Properties of the object must be initialized before use, either at declaration or in an init block.
+• Objects can inherit from classes and implement interfaces.
+
+You implement static members in kotlin by using companion object
