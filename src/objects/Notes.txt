@@ -1,0 +1,5 @@
+The object keyword in Kotlin lets you define a type that only has a single instance — a named object.
+
+A type defined with object cannot have constructors: Since there is only one instance of an object, there is no reason
+to provide constructor functions to create other instances. In a sense, the type is the instance.
+
